@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #031d38;
+            color: #6e97c5;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .bio, .skills, .contact {
+            background: #62b0dd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #04172b;
+            padding-bottom: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #5ea6e9;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: #011020;
+            color: #48afeb;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #081e36;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à minha página pessoal!</h1>
+    </header>
+    <div class="container">
+        <section class="bio">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é [Seu Nome]. Sou [Sua Profissão ou Área de Interesse] e estou apaixonado por [O que você gosta de fazer]. Aqui, você encontrará mais informações sobre mim, minhas habilidades e como entrar em contato.</p>
+        </section>
+        <section class="skills">
+            <h2>Minhas Habilidades</h2>
+            <ul>
+                <li>Habilidade 1</li>
+                <li>Habilidade 2</li>
+                <li>Habilidade 3</li>
+                <!-- Adicione mais habilidades conforme necessário -->
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Entre em Contato</h2>
+            <form action="mailto:seuemail@example.com" method="post" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
